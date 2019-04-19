@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/buttonBackground">
+    <item>
+        <shape android:shape="rectangle">
+
+            <stroke android:color="@color/buttonBackground" android:width="20dp" />
+            <!--corners allow us to make the rounded corners button-->
+            <corners android:radius="18dp" />
+        </shape>
+    </item>
+</ripple>
