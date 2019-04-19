@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/captured_img_tV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="@string/selected_media"
+        android:textSize="20sp" />
+
+    <VideoView
+        android:id="@+id/selected_vid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/captured_img_tV" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/switch_mute_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-450dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_sound"
+        android:background="@color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/selected_vid" />
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="fill_parent"
+        android:layout_alignBottom="@id/selected_vid"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_delete_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_delete"
+                android:drawableLeft="@drawable/ic_delete"
+                android:text="@string/remove"
+                android:background="@android:color/holo_red_light"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_take_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_check_white"
+                android:drawableStart="@drawable/ic_check_white"
+                android:text="@string/take"
+                android:background="@android:color/holo_green_dark"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.ButtonBarLayout>
+</RelativeLayout>

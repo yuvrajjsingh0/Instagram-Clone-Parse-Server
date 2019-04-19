@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.gohibo.album.EditPhotoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edit_picture_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/edit_picture"
+        app:titleTextColor="@color/black" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/pic_to_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/edit_picture"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/editing_opts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/editing_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/seek_filter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <Button
+                android:id="@+id/close_seek_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Close" />
+            <LinearLayout
+                android:id="@+id/edit_pic_seekbar_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/filter_seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:max="10"
+                    app:tickMark="@color/black"
+                    app:tickMarkTint="@color/black"
+                    android:thumbTint="@color/black"
+                    android:progressTint="@color/black"
+                    android:progress="5" />
+
+                <TextView
+                    android:id="@+id/filter_seek_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsEditPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        android:layout_weight="0"
+        android:layout_gravity="fill"
+        app:tabGravity="fill">
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/filters" />
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/options" />
+    </android.support.design.widget.TabLayout>
+</LinearLayout>

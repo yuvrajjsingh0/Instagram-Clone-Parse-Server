@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<declare-styleable name="imgcrop_imgcropView">
+
+        <!--Crop image view-->
+        <attr name="imgcrop_aspect_ratio_x" format="float"/>
+        <attr name="imgcrop_aspect_ratio_y" format="float"/>
+
+        <!--Overlay view-->
+        <attr name="imgcrop_show_oval_crop_frame" format="boolean"/>
+        <attr name="imgcrop_circle_dimmed_layer" format="boolean"/>
+        <attr name="imgcrop_dimmed_color" format="color"/>
+
+        <attr name="imgcrop_grid_stroke_size" format="dimension"/>
+        <attr name="imgcrop_grid_color" format="color"/>
+        <attr name="imgcrop_grid_row_count" format="integer"/>
+        <attr name="imgcrop_grid_column_count" format="integer"/>
+        <attr name="imgcrop_show_grid" format="boolean"/>
+
+        <attr name="imgcrop_frame_stroke_size" format="dimension"/>
+        <attr name="imgcrop_frame_color" format="color"/>
+        <attr name="imgcrop_show_frame" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="imgcrop_AspectRatioTextView">
+
+        <attr name="imgcrop_artv_ratio_title" format="string"/>
+
+        <attr name="imgcrop_artv_ratio_x" format="float"/>
+        <attr name="imgcrop_artv_ratio_y" format="float"/>
+
+    </declare-styleable>
+    <declare-styleable name="CameraView">
+        <!--
+          Set this to true if you want the CameraView to adjust its bounds to preserve the aspect
+          ratio of its camera preview.
+        -->
+        <attr name="android:adjustViewBounds"/>
+        <!-- Direction the camera faces relative to device screen. -->
+        <attr name="facing" format="enum">
+            <!-- The camera device faces the opposite direction as the device's screen. -->
+            <enum name="back" value="0"/>
+            <!-- The camera device faces the same direction as the device's screen. -->
+            <enum name="front" value="1"/>
+        </attr>
+        <!-- Aspect ratio of camera preview and pictures. -->
+        <attr name="aspectRatio" format="string"/>
+        <!-- Continuous auto focus mode. -->
+        <attr name="autoFocus" format="boolean"/>
+        <!-- The flash mode. -->
+        <attr name="flash" format="enum">
+            <!-- Flash will not be fired. -->
+            <enum name="off" value="0"/>
+            <!--
+              Flash will always be fired during snapshot.
+              The flash may also be fired during preview or auto-focus depending on the driver.
+            -->
+            <enum name="on" value="1"/>
+            <!--
+              Constant emission of light during preview, auto-focus and snapshot.
+              This can also be used for video recording.
+            -->
+            <enum name="torch" value="2"/>
+            <!--
+              Flash will be fired automatically when required.
+              The flash may be fired during preview, auto-focus, or snapshot depending on the
+              driver.
+            -->
+            <enum name="auto" value="3"/>
+            <!--
+              Flash will be fired in red-eye reduction mode.
+            -->
+            <enum name="redEye" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

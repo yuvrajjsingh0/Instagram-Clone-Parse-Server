@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:gravity="center">
+
+            <Button
+                android:clickable="true"
+                android:focusable="true"
+                android:drawableStart="@drawable/ic_addnew"
+                android:drawableLeft="@drawable/ic_addnew"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/addNew"
+                android:layout_width="30dp"
+                android:layout_height="26dp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/headericon"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+
+            <Button
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/Messages"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:background="@drawable/ic_message"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storiesBlock">
+
+    </FrameLayout>
+
+</LinearLayout>

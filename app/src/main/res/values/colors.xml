@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#8b8b8b</color>
+    <color name="colorWebLink">#051768</color>
+    <color name="colorAccent">#000000</color>
+    <color name="buttonBackground">#92000000</color>
+    <color name="navigationBarColor">#8b8b8b</color>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="low_contrast_white">#d3ffffff</color>
+    <color name="very_low_contrast_white">#a7ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="card_background">#00ffffff</color>
+    <color name="card_shadow_1">#00ffffff</color>
+    <color name="card_shadow_2">#00ffffff</color>
+	<color name="imgcrop_color_toolbar">#ffffff</color>
+    <color name="imgcrop_color_statusbar">#ac000000</color>
+    <color name="imgcrop_color_toolbar_widget">#000000</color>
+    <color name="imgcrop_color_widget">#000</color>
+    <color name="imgcrop_color_widget_active">#000000</color>
+    <color name="imgcrop_color_widget_background">#ffffff</color>
+    <color name="imgcrop_color_widget_text">#000</color>
+    <color name="imgcrop_color_progress_wheel_line">#808080</color>
+    <color name="imgcrop_color_crop_background">#000</color>
+    <color name="imgcrop_color_default_crop_grid">#80ffffff</color>
+    <color name="imgcrop_color_default_crop_frame">#ffffff</color>
+    <color name="imgcrop_color_default_dimmed">#8c000000</color>
+    <color name="imgcrop_color_default_logo">#4f212121</color>
+</resources>

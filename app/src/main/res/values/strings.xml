@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Stories Album</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_login">Login</string>
+    <string name="gcm_sender_id">id:817657258219</string>
+    <string name="facebook_app_id">831311190375001</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="select">Select</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="website">Website</string>
+    <string name="reset">Reset</string>
+    <string name="explore">Explore</string>
+    <string name="notifications">Notifications</string>
+    <string name="bio">Bio</string>
+    <string name="all">All</string>
+    <string name="starred">Starred</string>
+    <string name="setup">Setup</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="take">Take</string>
+    <string name="take_another">One more</string>
+    <string name="create_account">Create Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="current_city">Current City</string>
+    <string name="followings">Followings</string>
+    <string name="followers">Followers</string>
+    <string name="posts">Posts</string>
+    <string name="verified">Verified</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+    <string name="reg_desc">No account yet? Create one</string>
+    <string name="reset_pass_desc">Forgot Password? Reset</string>
+    <string name="reg_tnc_acceptance">By clicking above button you will accept our Terms and Conditions.</string>
+    <string name="reg_activity_login_desc">Already a member? Login</string>
+    <string name="fb_continue">Continue with Facebook</string>
+    <string name="message_splash">Login or Register to Get Started</string>
+    <string name="enter_email_here">Enter your email here</string>
+    <string name="enter_unique_username">Enter a unique username</string>
+    <string name="captured_image">Captured Image:</string>
+    <string name="image_removed">Image removed successfully!</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="selected_media">Selected Media</string>
+    <string name="edit_picture">Edit Picture</string>
+    <string name="select_folder">Select Folder:</string>
+	<string name="imgcrop_label_original">Original</string>
+    <string name="imgcrop_label_edit_photo">Edit Photo</string>
+    <string name="imgcrop_menu_crop">Crop</string>
+    <string name="filters">Filters</string>
+    <string name="options">Options</string>
+    <string name="imgcrop_error_input_data_is_absent" translatable="false">Both input and output Uri must be specified</string>
+    <string name="imgcrop_mutate_exception_hint" translatable="false">Therefore, override color resource (imgcrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+</resources>
